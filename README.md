@@ -228,31 +228,8 @@ Once Keycloak is started, you should be able to access your *Keycloak Server* at
 
 ### Submit a request to start new hiring
 
-Once the service is up and running you can make use of the **Hiring** application by a sending request to `http://localhost:8080/coffee-shop`  with following content:
-```json
-{   
-    "candidate": {
-        "name": "Jon Snow",
-        "email": "jsnow@example.com",
-        "salary": 30000,
-        "skills": "Java, Kogito"
-    }
-}
-```
+Once the service is up and running you can make use of the **Kogito-demo-barista** application by a sending request to `http://localhost:8080/barista`  with following content:
 
-In a Terminal you can execute this command to start a **Hiring** process for the "Jon Snow" candidate:
-```bash
-curl -H "Content-Type: application/json" -H "Accept: application/json" -X POST http://localhost:8080/hiring -d @- << EOF
-{   
-    "candidate": {
-        "name": "Jon Snow",
-        "email": "jsnow@example.com",
-        "salary": 30000,
-        "skills": "Java, Kogito"
-    }
-}
-EOF
-```
 
 ### Access Kogito Management Console
 
